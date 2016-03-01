@@ -1,0 +1,6 @@
+(define (sum_squares x y z)
+  (define g1 (if (>= x y) x y))
+  (define l1 (if (= g1 x) y x))
+  (define g2 (if (>= z l1) z l1))
+  (+ (* g1 g1) (* g2 g2))
+ )
